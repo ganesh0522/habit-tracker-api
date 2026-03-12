@@ -38,7 +38,6 @@ public class HabitController {
         return ResponseEntity.ok(habits);
     }
 
-    // 3️⃣ Mark Habit as Completed
     @PostMapping("/{id}/complete")
     public ResponseEntity<String> markCompleted(@PathVariable Long id) {
 
@@ -46,7 +45,6 @@ public class HabitController {
         return ResponseEntity.ok("Habit marked as completed for today");
     }
 
-    // 4️⃣ Get Habit History
     @GetMapping("/{id}/history")
     public ResponseEntity<Page<HabitEntry>> getHabitHistory(
             @PathVariable Long id,
