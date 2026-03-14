@@ -21,7 +21,6 @@ public class HabitController {
 
     private final HabitService habitService;
 
-    // 1️⃣ Create Habit
     @PostMapping
     public ResponseEntity<Habit> createHabit(
             @Valid @RequestBody HabitRequestDTO dto) {
@@ -54,7 +53,6 @@ public class HabitController {
         return ResponseEntity.ok(history);
     }
 
-    // 5️⃣ Weekly Progress
     @GetMapping("/{id}/weekly-progress")
     public ResponseEntity<Map<String, Object>> getWeeklyProgress(
             @PathVariable Long id) {
