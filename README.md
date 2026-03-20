@@ -19,8 +19,8 @@ A backend REST API built using Spring Boot for tracking daily habits.
 - Swagger / OpenAPI
 
 ## API Endpoints
-POST   /api/habits
-GET    /api/habits
-POST   /api/habits/{id}/complete
-GET    /api/habits/{id}/history
-GET    /api/habits/{id}/weekly-progress
+-POST   /api/habits
+-GET    /api/habits
+-POST   /api/habits/{id}/complete
+-GET    /api/habits/{id}/history
+-GET    /api/habits/{id}/weekly-progress
